@@ -11,3 +11,7 @@
   font-size: larger;
   border: 1px solid black;
 }
+
+.SquareBg:hover {
+  cursor: pointer;
+}

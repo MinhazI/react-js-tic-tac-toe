@@ -9,11 +9,12 @@ function App() {
   return (
     <div className="Container">
       <h2>Welcome to Tac Tic Toe</h2>
-      <div className="">
+      <div className="Meta-Data">
         <h4>Next turn: X</h4>
         <h4>Winner: X</h4>
       </div>
       <button
+        className="Button"
         onClick={() => {
           alert("SHANTHA BOISSSS!");
         }}

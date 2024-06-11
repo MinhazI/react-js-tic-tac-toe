@@ -17,3 +17,27 @@
 .Column {
   display: flex;
 }
+
+.Meta-Data {
+  display: flex;
+}
+
+.Meta-Data h4:nth-child(1) {
+  margin-right: 20px;
+}
+
+.Meta-Data h4:nth-child(2) {
+  margin-left: 20px;
+}
+
+.Button {
+  background-color: aquamarine;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: black;
+  color: aquamarine;
+  animation-duration: 2;
+}
