@@ -5,9 +5,10 @@ function App() {
   return (
     <div className="Container">
       <h2>Welcome to Tac Tic Toe</h2>
-      <div className=""></div>
-      <h4>Next turn: X</h4>
-      <h4>Winner: X</h4>
+      <div className="">
+        <h4>Next turn: X</h4>
+        <h4>Winner: X</h4>
+      </div>
       <button
         onClick={() => {
           alert("SHANTHA BOISSSS!");
