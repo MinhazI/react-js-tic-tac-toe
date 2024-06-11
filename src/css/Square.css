@@ -1,0 +1,13 @@
+.SquareBg {
+  width: 50px !important;
+  height: 50px;
+  background-color: aqua;
+  margin: 5px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: larger;
+  border: 1px solid black;
+}

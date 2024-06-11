@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/App.css";
+import Sqaure from "./components/Sqaure";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Container">
+      <h2>Welcome to Tac Tic Toe</h2>
+      <div className=""></div>
+      <h4>Next turn: X</h4>
+      <h4>Winner: X</h4>
+      <button
+        onClick={() => {
+          alert("SHANTHA BOISSSS!");
+        }}
+      >
+        Reset
+      </button>
+      <div className="Game-Container">
+        <div className="Row">
+          <Sqaure value={"O"} />
+          <Sqaure value={"X"} />
+          <Sqaure value={"O"} />
+        </div>
+        <div className="Row">
+          <Sqaure value={"O"} />
+          <Sqaure value={"X"} />
+          <Sqaure value={"O"} />
+        </div>
+        <div className="Row">
+          <Sqaure value={"O"} />
+          <Sqaure value={"X"} />
+          <Sqaure value={"O"} />
+        </div>
+      </div>
     </div>
   );
 }
