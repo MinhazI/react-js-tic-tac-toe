@@ -2,6 +2,10 @@ import "./css/App.css";
 import Sqaure from "./components/Sqaure";
 
 function App() {
+  const squareOnClick = () => {
+    alert("GAMMAC AH!");
+  };
+
   return (
     <div className="Container">
       <h2>Welcome to Tac Tic Toe</h2>
@@ -17,21 +21,23 @@ function App() {
         Reset
       </button>
       <div className="Game-Container">
-        <div className="Row">
-          <Sqaure value={"O"} />
-          <Sqaure value={"X"} />
-          <Sqaure value={"O"} />
-        </div>
-        <div className="Row">
-          <Sqaure value={"O"} />
-          <Sqaure value={"X"} />
-          <Sqaure value={"O"} />
-        </div>
-        <div className="Row">
-          <Sqaure value={"O"} />
-          <Sqaure value={"X"} />
-          <Sqaure value={"O"} />
-        </div>
+        {Array(3)
+          .fill(null)
+          .map((_, columnIndex) => (
+            <div key={columnIndex} className="Column">
+              {Array(3)
+                .fill(null)
+                .map((_, rowIndex) => (
+                  <div className="Row">
+                    <Sqaure
+                      key={rowIndex}
+                      value={"O"}
+                      onClick={() => squareOnClick()}
+                    />
+                  </div>
+                ))}
+            </div>
+          ))}
       </div>
     </div>
   );
