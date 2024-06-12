@@ -46,7 +46,7 @@ function App() {
     <div className="Container">
       <h2>Welcome to Tac Tic Toe</h2>
       <div className="Meta-Data">
-        <h4>Next turn: {isNext ? "X" : "O"}</h4>
+        {!winner && <h4>Next turn: {isNext ? "X" : "O"}</h4>}
         <h4>Winner: {winner ? winner : "None"}</h4>
       </div>
       <button
