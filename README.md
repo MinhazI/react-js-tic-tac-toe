@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) by [Minhaz Irphan Mohamed](https://www.minhazimohamed.com).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) by [Minhaz Irphan Mohamed](https://www.minhazimohamed.com?utm_source=github&utm_campaign=tic_tac_toe).
 
 ## Available Scripts
 
