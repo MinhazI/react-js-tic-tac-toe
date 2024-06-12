@@ -2,7 +2,7 @@ import React from "react";
 
 import "../css/Square.css";
 
-const Sqaure = ({ value, onClick }) => {
+const Square = ({ value, onClick }) => {
   return (
     <div className="SquareBg" onClick={() => onClick()}>
       {value}
@@ -10,4 +10,4 @@ const Sqaure = ({ value, onClick }) => {
   );
 };
 
-export default Sqaure;
+export default Square;
