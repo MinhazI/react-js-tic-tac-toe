@@ -1,5 +1,5 @@
 import "./css/App.css";
-import Square from "./components/Sqaure";
+import Square from "./components/Square";
 import { useState } from "react";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     setWinner(calculateWinner(newSquares));
   };
 
-  const calculateWinner = (sqaures) => {
+  const calculateWinner = (squares) => {
     const winningLines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -69,7 +69,7 @@ function App() {
                 .map((_, columnIndex) => {
                   const index = rowIndex * 3 + columnIndex;
                   return (
-                    <div className="Column">
+                    <div className="Column" key={index}>
                       <Square
                         key={index}
                         value={squares[index]}
